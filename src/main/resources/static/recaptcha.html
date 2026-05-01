@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdRsAQsAAAAAPhm0cMvwphWSSyeEImHDzqsylXV"></script>
+    <script>
+      function executeCaptcha() {
+        if (typeof grecaptcha === "undefined") {
+          if (window.Android && Android.onError) {
+            Android.onError("grecaptcha undefined");
+          }
+          return;
+        }
+
+        grecaptcha.ready(function () {
+          grecaptcha
+            .execute("6LdRsAQsAAAAAPhm0cMvwphWSSyeEImHDzqsylXV", { action: "register" })
+            .then(function (token) {
+              if (window.Android && Android.onToken) {
+                Android.onToken(token);
+              }
+            })
+            .catch(function (e) {
+              if (window.Android && Android.onError) {
+                Android.onError("captcha failed: " + e);
+              }
+            });
+        });
+      }
+    </script>
+  </head>
+  <body onload="executeCaptcha()"></body>
+</html>
