@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="18dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivIdea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <View
+            android:id="@+id/overlayGradient"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_idea_image_overlay"
+            app:layout_constraintBottom_toBottomOf="@id/ivIdea"
+            app:layout_constraintStart_toStartOf="@id/ivIdea"
+            app:layout_constraintEnd_toEndOf="@id/ivIdea" />
+
+        <TextView
+            android:id="@+id/tvIdeaTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/stargazing_night_at_the_hill_top"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/ivIdea"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/_69420"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/overlayGradient"
+            app:layout_constraintStart_toEndOf="@+id/btnLike"/>
+
+        <TextView
+            android:id="@+id/btnLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/hearticon"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/overlayGradient"
+            app:layout_constraintStart_toStartOf="@id/overlayGradient" />
+
+        <TextView
+            android:id="@+id/btnDislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dislike"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/overlayGradient"
+            app:layout_constraintEnd_toEndOf="@id/overlayGradient" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

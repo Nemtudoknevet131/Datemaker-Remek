@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark-ish screen background -->
+    <solid android:color="#111111" />
+
+    <!-- Neon green border -->
+    <stroke
+        android:width="2dp"
+        android:color="#66FF66" />
+
+    <!-- Slightly rounded corners -->
+    <corners android:radius="8dp" />
+
+    <padding
+        android:left="6dp"
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp" />
+</shape>

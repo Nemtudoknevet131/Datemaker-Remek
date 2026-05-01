@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://www.google.com/recaptcha/api.js?render=6LevWQQsAAAAAOIfgV8kBSv7CfAW_vuYnJA3WS9v"></script>
+        <script>
+            function executeCaptcha() {
+              grecaptcha.ready(function () {
+                grecaptcha
+                  .execute("6LevWQQsAAAAAOIfgV8kBSv7CfAW_vuYnJA3WS9v", { action: "register" })
+                  .then(function (token) {
+                    if (window.Android && Android.onToken) {
+                      Android.onToken(token);
+                    }
+                  })
+                  .catch(function (e) {
+                    if (window.Android && Android.onError) {
+                      Android.onError("captcha failed");
+                    }
+                  });
+              });
+            }
+        </script>
+    </head>
+    <body onload="executeCaptcha()">
+
+    </body>
+</html>

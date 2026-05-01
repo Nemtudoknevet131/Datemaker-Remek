@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game.SnakeGameActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="6dp">
+
+            <SurfaceView
+                android:id="@+id/svSnakeGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/retro_display_bg">
+
+            <LinearLayout
+                android:id="@+id/hudDisplay"
+                android:layout_width="260dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_00_00"
+                    android:textColor="#99FF99"
+                    android:textSize="16sp"
+                    android:fontFamily="monospace" />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/score_0000"
+                    android:textColor="#99FF99"
+                    android:textSize="16sp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/black">
+
+            <ImageButton
+                android:id="@+id/snakeUpButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/arrow_up"
+                android:tag="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/snakeLeftButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/ic_chevron_left"
+                    android:tag="left" />
+
+                <ImageButton
+                    android:id="@+id/snakeRightButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="55dp"
+                    android:src="@drawable/chevron_right"
+                    android:tag="right" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/snakeDownButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/arrow_down"
+                android:tag="down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gameOverOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="@drawable/game_over_panel">
+
+            <TextView
+                android:id="@+id/tvGameOverTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_over"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnRetrySnake"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/retry"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnContinueSnake"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/_continue"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

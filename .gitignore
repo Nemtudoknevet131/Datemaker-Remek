@@ -1,0 +1,77 @@
+# Java class fájlok
+*.class
+
+# Log fájlok
+*.log
+
+# Android Studio project fájlok
+*.iml
+*.iws
+*.ipr
+.idea/
+.gradle/
+local.properties
+.DS_Store
+
+# Gradle build output
+/build/
+*/build/
+
+# Keystore fájlok (ne véletlenül töltsd fel!)
+*.jks
+*.keystore
+
+# Android OS fájlok
+*.apk
+*.ap_
+*.dex
+
+# Caches
+.cache/
+captures/
+
+# NDK fájlok
+obj/
+
+# IntelliJ / Android Studio által generált
+out/
+
+# Windows-specifikus
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code (ha használnád)
+.vscode/
+
+# Mac-specifikus (ha valaha másik gépen dolgozol vele)
+*.DS_Store
+
+# Kotlin/Java build eszközök
+.kotlinc/
+.kts.compiled/
+
+# Test reportok
+/test-results/
+*/test-results/
+*.ec
+
+# Coverage reportok
+coverage/
+
+# Packaging
+*.zip
+*.aar
+
+# Temporary IDE configs
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/gradle.xml
+.idea/libraries
+
+# Local Run configs
+.idea/runConfigurations/
+
+# Misc
+*.orig

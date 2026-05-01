@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/home_outline"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/navCalendar"
+        android:icon="@drawable/calendar_outline"
+        android:title="@string/calendar" />
+    <item
+        android:id="@+id/navDummy"
+        android:enabled="false"
+        android:icon="@drawable/transparent_24"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/navInbox"
+        android:icon="@drawable/inbox_outline"
+        android:title="@string/inbox" />
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/profile_outline"
+        android:title="@string/profile" />
+</menu>

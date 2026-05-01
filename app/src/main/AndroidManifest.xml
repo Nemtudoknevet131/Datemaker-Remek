@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DateMaker.Dark"
+        tools:targetApi="24">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+        
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".activity.SubscriptionActivity"
+            android:theme="@style/Theme.DateMaker.Dark" />
+        <activity
+            android:name=".activity.SlideActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DateMaker.Dark" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:resizeableActivity="true">
+        </activity>
+        <activity
+            android:name=".activity.EmailValidationActivity" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activity.AccountActivity" >
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.PresetDateActivity">
+        </activity>
+        <activity
+            android:name=".activity.AddPartnerActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.PartnerProfileActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.AiDateChatActivity"
+            android:resizeableActivity="true">
+        </activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:resizeableActivity="true">
+        </activity>
+        <activity
+            android:name=".game.CardCategoriesActivity">
+
+        </activity>
+        <activity
+            android:name=".game.CardDrawActivity">
+
+        </activity>
+        <activity
+            android:name=".game.FlappyActivity">
+
+        </activity>
+        <activity
+            android:name=".game.TankTroubleActivity">
+
+        </activity>
+        <activity
+            android:name=".game.IceHockeyActivity">
+        </activity>
+        <activity
+            android:name=".game.SnakeActivity">
+        </activity>
+        <activity
+            android:name=".game.SnakeGameActivity">
+
+        </activity>
+        <activity
+            android:name=".game.SnakeResultActivity">
+
+        </activity>
+        <activity
+            android:name=".game.FireboyWatergirlActivity">
+        </activity>
+        <activity
+            android:name=".activity.GameCenterActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.VerifyPhoneActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".activity.RelationshipDetailsActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.ResetPasswordActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.LoveArrowsGameActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.LoveArrowsResultActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.PremiumStatusActivity">
+
+        </activity>
+        <service
+            android:name=".firebase.MyFireBaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "301039942357",
+    "project_id": "arboreal-totem-475109-p7",
+    "storage_bucket": "arboreal-totem-475109-p7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301039942357:android:a4753857e26b1acc0ac05c",
+        "android_client_info": {
+          "package_name": "com.example.datemaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301039942357-3p5sn1mjj5dh93ilth9jqvsqc5sm6iem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datemaker",
+            "certificate_hash": "03842ac0bab8059ebee5d8f7c1520ceb62537b7b"
+          }
+        },
+        {
+          "client_id": "301039942357-glghj754l5dval84g1d3kd5psv4tm4s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtxKsnaPmI97BPuWX8-JjBhp1jT0f2jbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301039942357-glghj754l5dval84g1d3kd5psv4tm4s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/card_gradient_bg">
+
+        <ImageView
+            android:id="@+id/boxImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:contentDescription="@string/image_randomity"
+            android:src="@drawable/image_filled"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/boxTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:text="@string/kurvaanyad"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/add_filled"
+            android:layout_gravity="center"
+            app:tint="@android:color/darker_gray" />
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

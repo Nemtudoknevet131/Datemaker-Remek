@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">DateMaker</string>
+
+    <!-- Registration -->
+    <string name="registration">Registration</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="captchaImage">Captcha Image</string>
+    <string name="captcha_info">Captcha</string>
+    <string name="register">Register</string>
+    <string name="app_logo">App Logo</string>
+    <string name="captcha_inner_title">I am not a robot</string>
+    <string name="verify_you_are_human">Verify you are human</string>
+    <string name="captcha_subtitle">Captcha</string>
+    <string name="captcha_legal_short">Captcha legal short</string>
+    <string name="captcha_icon">Captcha Icon</string>
+    <string name="copyright_sample">© 2025 Team Singleton</string>
+
+    <!-- OAuth -->
+    <string name="cont_w_google">Continue with Google</string>
+    <string name="google_logo">Google Logo</string>
+    <string name="facebook_logo">Facebook Logo</string>
+    <string name="cont_w_facebook">Continue with Facebook</string>
+    <string name="facebook_app_id">1192450196092454</string>
+    <string name="fb_login_protocol_scheme">fb1192450196092454</string>
+    <string name="facebook_client_token">fb1192450196092454</string>
+
+    <!-- Misc -->
+    <string name="maker">Maker</string>
+    <string name="date">Date</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="alr_have_an_account">Already have an account? Log in!</string>
+    <string name="at_least_6_characters">At least 6 characters</string>
+    <string name="starting_with_capital_letter">Starting with capital letter</string>
+    <string name="has_at_least_one_special_character">Has at least one special character</string>
+    <string name="contains_a_number">Contains a number</string>
+    <string name="pronouns">Pronouns</string>
+    <string name="six_digit_code">6-digit code</string>
+    <string name="verify">Verify</string>
+    <string name="enter_the_6_digit_code_we_sent_to_your_email">
+        Enter the 6-digit code we sent to your email
+    </string>
+    <string name="kurvaanyad">KurvaAnyad!</string>
+    <string name="wise_comment">Ne vágj eret, Diddy szeret.</string>
+    <string name="get_started">Get Started</string>
+    <string name="preset_dates_with_calendar">Preset dates with calendar</string>
+    <string name="login"><u>Login</u></string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login_button">Login</string>
+    <string name="welcome_to_the_mainactivity">Welcome to the MainActivity!</string>
+
+    <!-- Navigation -->
+    <string name="own_programs">Own Programs</string>
+    <string name="memory_lane">Memory Lane</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="inbox">Inbox</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="display">Display</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_and_permissions">Privacy and permissions</string>
+    <string name="account_information">Account Information</string>
+
+    <!-- Profile / Partner -->
+    <string name="your_profile">Your profile</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="add_partner">Add Partner</string>
+    <string name="partner_email">Partner email</string>
+    <string name="your_partner">Your partner</string>
+    <string name="wants_to_connect_with_you">wants to connect with you</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="was_here_at">Was here at</string>
+    <string name="since_2025_03_14">Since 2025.03.14</string>
+    <string name="shared_plans">Shared plans</string>
+    <string name="things_about_your_relationship">Things about your relationship</string>
+
+    <!-- General actions -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="send">Send</string>
+    <string name="error_network">Network error. Please try again.</string>
+    <string name="error_loading_contact">Could not load contact details</string>
+    <string name="error_updating_email">Could not update email</string>
+    <string name="error_sending_code">Could not send verification code</string>
+
+    <!-- Email fragment -->
+    <string name="change_email">Change email</string>
+    <string name="enter_email_address">Enter your email address</string>
+    <string name="email_required">Email is required</string>
+    <string name="email_invalid">Please enter a valid email address</string>
+    <string name="email_updated">Email updated</string>
+    <string name="edit_email">Edit email</string>
+    <string name="email_not_set">Email not set</string>
+    <string name="email_label">Email</string>
+    <string name="email_icon">Email icon</string>
+
+    <!-- Phone fragment -->
+    <string name="add_phone_number">Add phone number</string>
+    <string name="enter_phone_number">Enter your phone number</string>
+    <string name="phone_number_title">Phone Number</string>
+    <string name="phone_required">Phone number is required</string>
+    <string name="phone_invalid">Please enter a valid phone number</string>
+    <string name="phone_not_set">Phone not set</string>
+    <string name="edit_phone">Edit phone number</string>
+    <string name="phone_icon">Phone icon</string>
+    <string name="code_sent">Verification code sent</string>
+    <string name="code_resent">New code sent</string>
+
+    <!-- Verify phone activity -->
+    <string name="verify_phone_title">Verify phone number</string>
+    <string name="verify_phone_description">
+        We sent a 6-digit code via SMS. Enter it below to verify your phone number.
+    </string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="resend_code">Resend code</string>
+    <string name="unknown_phone">Unknown phone number</string>
+    <string name="code_invalid">Please enter a 6-digit code</string>
+    <string name="code_invalid_or_expired">Code is invalid or has expired</string>
+    <string name="phone_verified">Phone number verified</string>
+
+    <!-- Contact card headers -->
+    <string name="contact_details">Contact details</string>
+    <string name="contact_details_subtitle">
+        Manage your email address and phone number.
+    </string>
+
+    <!-- Misc placeholders -->
+    <string name="random_dude">Random Dude</string>
+    <string name="random_text_under_heart">Random text under heart</string>
+    <string name="i_love_my_wife_dude">I love my wife DUDE</string>
+    <string name="big_ass_forehead">Big ass forehead</string>
+    <string name="profileiconoutline">profilIconOutline</string>
+    <string name="profileiconfilled">profilIconFilled</string>
+    <string name="change_for">Change for Selim</string>
+    <string name="this_is_home_bitch">This is Home bitch!</string>
+    <string name="this_is_profile_bitch">This is profile bitch</string>
+    <string name="this_is_inbox_bitch">This is inbox bitch</string>
+    <string name="this_is_calendar_bitch">This is calendar bitch</string>
+
+    <!-- Extra -->
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="chat">Chat</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="category">Category:</string>
+    <string name="tap_draw">Tap Draw</string>
+    <string name="draw_card">Draw Card</string>
+    <string name="choose_a_category">Choose a Category</string>
+    <string name="intimacy">Intimacy</string>
+    <string name="eighteen_plus">18+</string>
+    <string name="funny">Funny</string>
+    <string name="deep_talk">Deep Talk</string>
+    <string name="romantic">Romantic</string>
+    <string name="add_card">Add Card</string>
+    <string name="game_center">Game Center</string>
+    <string name="game_title">Game Title</string>
+
+    <!-- Phone screen labels -->
+    <string name="phone_label">Phone number</string>
+    <string name="phone_title">Phone Number</string>
+    <string name="phone_subtitle">Manage your phone number</string>
+    <string name="dont_have_an_account_sign_up">Dont have an account? Sign up!</string>
+    <string name="message">Message</string>
+    <string name="see_more">See more</string>
+    <string name="contains_capital_and_lowercase_letter">Contains capital and lowercase letter</string>
+    <string name="by_registering_you_agree_to_the_terms_of_service">By registering you agree to the terms of service</string>
+    <string name="by_registering_you_agree_that_you_are_at_least_16_years_old">By registering you agree that you are at least 16 years old</string>
+    <string name="user_example_com">User example com</string>
+    <string name="add_memory">Add memory</string>
+    <string name="image_randomity">image randomity</string>
+
+    <string name="edit_first_name">Edit first name</string>
+    <string name="edit_last_name">Edit last name</string>
+    <string name="value_not_set">Not set</string>
+    <string name="first_name_required">First name is required</string>
+    <string name="last_name_required">Last name is required</string>
+    <string name="error_updating_name">Error updating name</string>
+    <string name="first_name_updated">First name updated</string>
+    <string name="last_name_updated">Last name updated</string>
+    <string name="you">You</string>
+    <string name="tap_here_to_set_your_special_date">Tap here to set your special date</string>
+    <string name="more_shit_about_the_relationship_later">More shit about the relationship later</string>
+    <string name="partner">Partner</string>
+    <string name="you_partner">You + Partner</string>
+
+    <string name="reset_password">Reset password</string>
+    <string name="reset_password_subtitle">Enter the email linked to your DateMaker account. We will send you a magic link to choose a new password.</string>
+    <string name="reset_password_hint">You will receive an email with a secure link that lets you set a new password.</string>
+    <string name="send_reset_email">Send reset email</string>
+    <string name="back">Back</string>
+    <string name="add_date">Add Date</string>
+    <string name="previous_month">Previous Month</string>
+    <string name="november_2025">November 2025</string>
+    <string name="next_month">Next Month</string>
+    <string name="mon">Mon</string>
+    <string name="_11">11</string>
+    <string name="change_color">Change Color</string>
+    <string name="movie_night">Movie Night</string>
+    <string name="cinema_dinner_after">Cinema + Dinner after</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="error_saving_date">Error saving date</string>
+    <string name="error_updating_color">Error updating color</string>
+    <string name="inspiration_hub">Inspiration Hub</string>
+    <string name="browse_and_share_date_ideas_with_others">Browse and share date ideas with others 💫</string>
+    <string name="contribute_your_idea">Contribute your idea</string>
+    <string name="no_ideas_yet_nbe_the_first_to_inspire_others">No ideas yet.\nBe the first to inspire others ✨</string>
+    <string name="stargazing_night_at_the_hill_top">Stargazing night at the hill top</string>
+    <string name="_69420">69420</string>
+    <string name="hearticon">❤</string>
+    <string name="dislike">✕</string>
+    <string name="choose_photo">Choose photo</string>
+    <string name="post_idea">Post idea</string>
+    <string name="_0">0</string>
+    <string name="score_0">Score: 0</string>
+    <string name="_0_npartner">0\nPartner</string>
+    <string name="coins_0">Coins: 0</string>
+    <string name="total_together_0">Total together: 0</string>
+    <string name="coins_x2">Coins x2?</string>
+    <string name="arrows_10">Arrows: 10</string>
+    <string name="_30s">30s</string>
+    <string name="add_new_date">Add New Date</string>
+    <string name="ask_ai_for_ideas">✨ Ask AI for Ideas</string>
+    <string name="save_date">Save Date</string>
+    <string name="time_not_set">Time: Not set</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="gifts_list">Gifts (List)</string>
+    <string name="enter_gifts_one_per_line">Enter gifts (one per line)</string>
+    <string name="your_plan_premium">Your plan: Premium</string>
+    <string name="thanks_for_supporting_datemaker">Thanks for supporting DateMaker ♥</string>
+    <string name="cancel_anytime">Cancel anytime!</string>
+    <string name="play_now">Play Now</string>
+    <string name="score_0000">SCORE 0000</string>
+    <string name="length_3">LENGTH 3</string>
+    <string name="time_00_00">TIME 00:00</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="retry">Retry</string>
+    <string name="_continue">Continue</string>
+    <string name="result">Result</string>
+    <string name="my_high_score">My high score: -</string>
+    <string name="partners_high_score">Partners high score:</string>
+    <string name="back_to_games">Back to Games</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="_17_30">17:30</string>
+    <string name="date_time_not_set">Date Time: Not set</string>
+    <string name="pick_date">Pick date</string>
+    <string name="add_date_idea">Add Date Idea</string>
+    <string name="scroll_right">Scroll right</string>
+</resources>

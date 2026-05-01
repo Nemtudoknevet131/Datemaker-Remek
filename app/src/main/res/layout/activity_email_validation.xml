@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#3E1A47"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_6_digit_code_we_sent_to_your_email"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingBottom="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/six_digit_code"
+        android:layout_marginTop="3dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C77DFF"
+        app:hintTextColor="#C77DFF"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxStrokeErrorColor="@color/red">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:fontFamily="@font/cormorant_garamond_italic"
+        android:layout_marginTop="22dp"
+        app:cornerRadius="12dp"
+        app:elevation="6dp"
+        app:backgroundTint="#C77DFF"
+        app:rippleColor="#9D4EDD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#555555"
+        android:textColor="@android:color/white"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heartLottie"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/heart_burst"
+        android:visibility="gone" />
+</LinearLayout>
