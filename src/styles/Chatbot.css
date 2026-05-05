@@ -1,0 +1,341 @@
+.chatbot-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 140px);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chat-header {
+  text-align: center;
+  padding: 20px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border: 1px solid rgba(155, 89, 182, 0.2);
+  border-bottom: none;
+}
+
+.chat-header h1 {
+  font-size: 1.6rem;
+  background: var(--gradient-romantic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+}
+
+.chat-header p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border-left: 1px solid rgba(155, 89, 182, 0.2);
+  border-right: 1px solid rgba(155, 89, 182, 0.2);
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: var(--bg-input);
+  border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+.message {
+  display: flex;
+  gap: 12px;
+  max-width: 85%;
+  animation: messageSlide 0.3s ease-out;
+}
+
+@keyframes messageSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.message.bot {
+  align-self: flex-start;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.message.user .message-avatar {
+  background: var(--gradient-primary);
+}
+
+.message.bot .message-avatar {
+  background: var(--gradient-romantic);
+}
+
+.message-content {
+  padding: 12px 18px;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.message.user .message-content {
+  background: var(--gradient-primary);
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message.bot .message-content {
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border-bottom-left-radius: 5px;
+  border: 1px solid rgba(155, 89, 182, 0.2);
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 5px;
+  text-align: right;
+}
+
+.message.user .message-time {
+  text-align: left;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 20px;
+  background: var(--bg-input);
+  border-radius: 20px;
+  width: fit-content;
+  border: 1px solid rgba(155, 89, 182, 0.2);
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  animation: typingBounce 1.4s ease-in-out infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+}
+
+.chat-input-container {
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid rgba(155, 89, 182, 0.2);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.chat-input-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.chat-input {
+  flex: 1;
+  border: none;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--bg-input);
+  border-radius: 25px;
+  min-height: 50px;
+  max-height: 120px;
+  color: var(--text-primary);
+  border: 1px solid rgba(155, 89, 182, 0.2);
+  transition: all 0.2s ease;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-glow);
+}
+
+.chat-input::placeholder {
+  color: var(--text-muted);
+}
+
+.chat-send-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: var(--gradient-primary);
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-light);
+}
+
+.chat-send-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.chat-send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quick-suggestions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.suggestion-chip {
+  padding: 8px 16px;
+  background: var(--bg-input);
+  border: 1px solid rgba(155, 89, 182, 0.3);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+}
+
+.suggestion-chip:hover {
+  background: rgba(155, 89, 182, 0.2);
+  border-color: var(--primary-color);
+  color: var(--primary-light);
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+}
+
+.welcome-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.welcome-message h2 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.welcome-message p {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .chatbot-page {
+    height: calc(100vh - 120px);
+  }
+
+  .chat-header {
+    padding: 15px;
+  }
+
+  .chat-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .chat-messages {
+    padding: 15px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+
+  .message-avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .message-content {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+
+  .chat-input-container {
+    padding: 15px;
+  }
+
+  .chat-input {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .quick-suggestions {
+    gap: 8px;
+  }
+
+  .suggestion-chip {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
